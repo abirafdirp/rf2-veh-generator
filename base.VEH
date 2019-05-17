@@ -42,7 +42,7 @@ Number={NUMBER}
 Team="{TEAM}"
 PitGroup="Group11"
 Driver="{NAME}"
-Description="695 Fickry Segeir #{NUMBER}"
+Description="695 {NAME} #{NUMBER}"
 Engine="" 
 Manufacturer="Abarth"
 
