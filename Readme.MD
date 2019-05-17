@@ -33,8 +33,11 @@ in your input folder.
 ## Guide
 1. Put your dds files inside input folder
 2. the format of DDS files must be `xx_alt.dds` otherwise it will be skipped
-3. open cmd and type `python veh_generator.py`
+3. `base.VEH` is the base template, change it to your vehicle `VEH`.
+    Use `base.VEH` as an example on how to interpolate data from CSV into your
+    vehicle's `VEH`
+4. open cmd and type `python veh_generator.py`
     (if it doesn't work try to change to `python3`)
-4. Your `VEH` files and `DDS` files will be compiled inside `output` folder
+5. Your `VEH` files and `DDS` files will be compiled inside `output` folder
     and ready to be packaged via MAS
 
