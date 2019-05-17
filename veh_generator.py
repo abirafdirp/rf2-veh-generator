@@ -13,8 +13,10 @@ if not os.path.exists('output'):
     os.mkdir('output')
 
 if os.path.exists('input/guest_alt.dds'):
+    has_guest_dds = True
     print('guest dds detected, guest drivers will use it')
 else:
+    has_guest_dds = False
     print('guest dds not detected, if there is any guest drivers, it will be skipped')  # noqa
 
 input_dir = os.fsencode('input')
@@ -50,6 +52,10 @@ for position, line in enumerate(csv_reader):
         continue
 
     is_guest_in_data = True if line['GUEST'] != '' else False
+
+    if is_guest_in_data and not has_guest_dds:
+        print(f'car number {number_in_csv} is guest, but you do not have guest_alt.dds file present')  # noqa
+        continue
 
     name_in_data = line['NAME']
     team_in_csv = line['TEAM']
