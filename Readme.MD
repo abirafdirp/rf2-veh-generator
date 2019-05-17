@@ -26,11 +26,15 @@ of keywords that can be put into your `VEH` file
 
 Keywords can be duplicated inside the `VEH` file.
 
+## Guest skin
+If you want to have guest skin, just provide the exact file `guest_alt.dds`
+in your input folder.
+
 ## Guide
 1. Put your dds files inside input folder
 2. the format of DDS files must be `xx_alt.dds` otherwise it will be skipped
 3. open cmd and type `python veh_generator.py`
     (if it doesn't work try to change to `python3`)
-4. Your `VEH` files and `DDS` files will be compiled inside output folder
+4. Your `VEH` files and `DDS` files will be compiled inside `output` folder
     and ready to be packaged via MAS
 

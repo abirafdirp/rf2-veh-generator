@@ -9,6 +9,9 @@ with open('base.VEH') as f:
 drivers_data = open('data.csv')
 csv_reader = csv.DictReader(drivers_data)
 
+if not os.path.exists('output'):
+    os.mkdir('output')
+
 if os.path.exists('input/guest_alt.dds'):
     print('guest dds detected, guest drivers will use it')
 else:
