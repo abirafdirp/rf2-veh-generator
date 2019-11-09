@@ -1,0 +1,7 @@
+#!/bin/bash
+# requires imagemagick installed
+for file in output/*.png
+do
+    convert "$file" "output/$(basename "$file" .png).dds"
+    rm "$file"
+done

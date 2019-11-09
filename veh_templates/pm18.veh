@@ -1,0 +1,40 @@
+// The first section defines what maps to load for the vehicle skinning technology.
+// The first line defines a "prefix" to be used for all generic maps.
+// Currently, generic maps are used for the livery, wing, driver, driver arms, driver helmet, and pit crew.
+// The second line will replace the default livery with the new specified, for the track specified.
+// The format is as follows:
+//
+// DefaultLivery="PREFIX"       // PREFIX is the base texture map name, assumed to be BMP unless specified
+// PitCrewLivery="PREFIX"       // This is only needed if it differs from the default livery PREFIX
+// TrackLivery="TRACK, PREFIX"  // TRACK is the track name as defined in the event GDB
+// TrackLivery="TRACK, PREFIX"  // For example, "2004_Toban"
+// TrackLivery="TRACK, PREFIX"  // You can have an infinite # of these lines
+
+DefaultLivery="{SKIN_FILE}"
+MaterialOverride="Tatuus_PM18_BaseMat.json"
+
+HDVehicle=Tatuus_PM18.hdv
+Graphics=Tatuus_PM18.gen
+Spinner=Tatuus_PM18_Spinner.gen
+GenString=                          // Used to generate GMT names in *.gen file
+Sounds=Tatuus_PM18.sfx		// Sounds=default.sfx
+Cameras=Tatuus_PM18.cam            // Defaults to default.cfg in UserData directory
+HeadPhysics=Tatuus_PM18_HeadPhysics.ini       // Affects driver eyepoint only
+Cockpit=Tatuus_PM18_cockpitinfo.ini
+Upgrades=Tatuus_PM18_Upgrades.ini
+
+//////////////////////////TEAM HISTORY AND INFORMATION///////////////////////////////////////////
+
+Number={NUMBER}
+Team="{TEAM}"
+PitGroup="Group1"
+Driver="{NAME}"
+Description="Tatuus PM-18 {NAME} #{NUMBER}"
+Engine="Mazda 2.0 litre MZR-PM18A 275 hp."
+Manufacturer="Tatuus PM-18"
+Classes="Tatuus PM-18"
+
+FullTeamName="{TEAM}"
+TeamHeadquarters=""
+
+Category="Tatuus, Tatuus PM-18, {CLASS}"

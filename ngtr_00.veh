@@ -1,0 +1,46 @@
+// The first section defines what maps to load for the vehicle skinning technology.
+// The first line defines a "prefix" to be used for all generic maps.
+// Currently, generic maps are used for the livery, wing, driver, driver arms, driver helmet, and pit crew.
+// The second line will replace the default livery with the new specified, for the track specified.
+// The format is as follows:
+//
+// DefaultLivery="PREFIX"       // PREFIX is the base texture map name, assumed to be BMP unless specified
+// PitCrewLivery="PREFIX"       // This is only needed if it differs from the default livery PREFIX
+// TrackLivery="TRACK, PREFIX"  // TRACK is the track name as defined in the event GDB
+// TrackLivery="TRACK, PREFIX"  // For example, "2004_Toban"
+// TrackLivery="TRACK, PREFIX"  // You can have an infinite # of these lines
+
+DefaultLivery="{SKIN_FILE}"
+
+HDVehicle=Nissan_GTR_GT1.hdv
+Graphics=ngtr.gen
+Spinner=ngtr_Spinner.gen
+Upgrades=Nissan_GTR_GT1_Upgrades.ini // Vehicle upgrades information
+GenString=                     // Used to generate GMT names in *.gen file
+Cameras=NGTR.cam               // Defaults to cams.cfg in UserData directory
+Sounds=ngtr.sfx                //Sounds=default.sfx
+HeadPhysics=HeadPhysics_GT.ini // Affects driver eyepoint only
+Cockpit=ngtr_cockpitinfo.ini
+AIUpgradeClass=GT1
+
+//////////////////////////TEAM HISTORY AND INFORMATION///////////////////////////////////////////
+
+Number={NUMBER}
+Team="IDMC"
+PitGroup="Group1"
+Driver="{NAME}"
+Description="{NAME} - Nissan GT-R GT1 #{NUMBER}"
+Engine="Nissan 5.6L V-8"
+Manufacturer="Nissan"
+Classes="GT1_GTR"
+
+FullTeamName="IDMC"
+TeamFounded=2003
+TeamHeadquarters="Indonesia"
+TeamStarts=100
+TeamPoles=7
+TeamWins=5
+TeamWorldChampionships=1
+
+
+Category="Nissan, GT-R GT1 2011, {CLASS}"

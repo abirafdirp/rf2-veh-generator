@@ -19,7 +19,7 @@ of keywords that can be put into your `VEH` file
 (remember to wrap them with {})
 
 1. {NUMBER}
-2. {DDS}
+2. {SKIN_FILE}
 3. {TEAM}
 4. {CLASS}
 5. {NAME}
